@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify - content: center;
+  align - items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.calculator {
+  background: #222;
+  padding: 20px;
+  border - radius: 10px;
+}
+
+#display {
+  width: 100 %;
+  height: 40px;
+  margin - bottom: 10 %;
+  text - align: right;
+  font - size: 20px;
+  padding: 5px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font - size: 18px;
+  cursor: pointer;
+}
