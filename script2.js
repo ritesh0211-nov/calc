@@ -1,30 +1,17 @@
-body {
-  display: flex;
-  justify - content: center;
-  align - items: center;
-  height: 100vh;
-  background: #f4f4f4;
+let display = document.getElementById("display");
+
+function appendValue(value) {
+  display.value += value;
 }
 
-.calculator {
-  background: #222;
-  padding: 20px;
-  border - radius: 10px;
+function clearDisplay() {
+  display.value = "";
 }
 
-#display {
-  width: 100 %;
-  height: 40px;
-  margin - bottom: 10 %;
-  text - align: right;
-  font - size: 20px;
-  padding: 5px;
-}
-
-button {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  font - size: 18px;
-  cursor: pointer;
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch {
+    display.value = "Error";
+  }
 }
