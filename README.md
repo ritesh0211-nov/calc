@@ -1,3 +1,3 @@
-# calc
+# Calc
 
-this is the calculator demo
+This is the Calculator repo
